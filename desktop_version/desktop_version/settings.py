@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ovx(qzt*25@47y^njkur#xkf0*)x*$r*!42olr(y9fi9e7f#ep'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["alpha-bit8726.herokuapp.com"]
 
 
 # Application definition
@@ -85,9 +85,9 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
-# import dj_database_url
-# dj_from_env=dj_database.url.config(conn_max_age=600)
-# DATABASES['default'].update(dj_from_env)
+import dj_database_url
+dj_from_env=dj_database.url.config(conn_max_age=600)
+DATABASES['default'].update(dj_from_env)
 
 
 
