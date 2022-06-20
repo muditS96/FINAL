@@ -1,1 +1,1 @@
-web: gunicorn desktop_version.desktop_version.wsgi : app --log-file - 
+web: gunicorn desktop_version.desktop_version.wsgi --log-file - 
