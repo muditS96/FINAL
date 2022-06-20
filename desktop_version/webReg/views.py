@@ -93,7 +93,7 @@ def logon(request):
             messages.info(request,'check username ,password or make new entry  ') 
             print("inside user not present")
 
-            return redirect('/') 
+            return redirect('login') 
 
 
 

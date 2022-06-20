@@ -27,6 +27,7 @@ DEBUG =False
 
 # ALLOWED_HOSTS =[""]
 ALLOWED_HOSTS = ["alpha-bit8726.herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
