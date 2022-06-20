@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ovx(qzt*25@47y^njkur#xkf0*)x*$r*!42olr(y9fi9e7f#ep
 DEBUG =False
 
 # ALLOWED_HOSTS =[""]
-ALLOWED_HOSTS = ["alpha-bit8726.herokuapp.com"]
+ALLOWED_HOSTS = ["//alphabit-8726.herokuapp.com/"]
 # ALLOWED_HOSTS = ["*"]
 
 
