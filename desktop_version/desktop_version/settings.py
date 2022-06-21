@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-# import django_heroku
+import django_heroku
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -82,12 +84,15 @@ DATABASES = {
     'default': {
          
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'testdb',
-        'USER': 'postgres',
-        'PASSWORD':'8726', 
-        'HOST': 'localhost'
+        'NAME': 'dcafqi9q6ls3pe',
+        'USER': 'xyunjcwumlmtsm',
+        'PASSWORD':'270f7bd83f127807425bcff91e27b1b70fbafab78bf45bc366b159e19f75ad2d', 
+        'HOST': 'ec2-52-72-99-110.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 }
+
+
 import dj_database_url
 dj_from_env=dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(dj_from_env)
@@ -130,11 +135,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
-STATIC_ROOT=os.path.join(BASE_DIR,'assets')
+
+django_heroku.settings(locals())
 
 
 
@@ -144,6 +152,4 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# django_heroku.settings(locals())
 
