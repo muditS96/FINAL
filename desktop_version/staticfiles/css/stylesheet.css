@@ -1,0 +1,36 @@
+body {
+    background-color: powderblue;
+  }
+.Tittle {
+    color: red;
+    height: 400px;
+	width: 200px;
+	background: #7E7BB9;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+    
+  }
+  p {
+    color: red;
+  }
+
+loginblock{
+    
+    height:110px;
+    width:190px;
+    margin:auto;
+    border:1px #CCC solid;
+    padding:10px;
+    color: red;
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+    
+    
+
+  }
